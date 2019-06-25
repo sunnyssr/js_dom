@@ -42,7 +42,7 @@
 
     ul.firstElementChild.style.backgroundColor = "grey"; // 1
 
-    li.forEach((elem) => elem.style.backgroundColor = "lightgreen"); // 2
+    Array.from(ul.children).forEach((elem) => elem.style.backgroundColor = "lightgreen"); // 2
 
     const li = document.getElementsByTagName("li");
     li[li.length-1].style.backgroundColor = "pink"; // 3
