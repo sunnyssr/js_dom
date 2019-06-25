@@ -39,5 +39,18 @@
     const p = document.getElementsByTagName("p")[0];
     const ul = document.getElementsByTagName("ul")[0];
     // Your code goes here
+
+    ul.firstElementChild.style.backgroundColor = "grey"; // 1
+
+    ul.children.forEach((elem) => elem.style.backgroundColor = "lightgreen"); // 2
+
+    // const li = document.getElementsByTagName("li");
+    // li[li.length-1].style.backgroundColor = "pink"; // 3
+
+    // let midElement = li[(li.length-1)/2]; // will work for odd numbers only // 4
+    
+    // midElement.previousElementSibling.style.backgroundColor = "coral"; // 5
+    // midElement.nextElementSibling.style.backgroundColor = "aquamarine"; // 5
+
   </script>
 </html>

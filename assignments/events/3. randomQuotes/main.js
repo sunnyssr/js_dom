@@ -1,7 +1,13 @@
 var quotes;
 
 // Write your code here
-
+document.addEventListener("keydown" , (event) => { 
+    if(event.keyCode===32){
+        let randomNum = Math.round(Math.random() * quotes.length-1);
+        document.querySelector("#quoteContainer").innerHTML = quotes[randomNum].quoteText;
+        document.querySelector("#authorName").innerHTML = quotes[randomNum].quoteAuthor;
+    }
+})
 
 
 quotes = [
