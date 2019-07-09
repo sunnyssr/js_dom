@@ -11,6 +11,48 @@
       <h1>Document Object Model</h1>
     <script>
       // your code goes here
+      let paraElement = document.createElement("p"); // 1
+
+      document.body.append(paraElement);
+
+      paraElement.textContent = "Hello Javascript!"; // 2
+
+      paraElement.innerHTML = "I love <strong>Javascript</strong>"; // 3
+
+      // 4 Start
+
+      let unorderedList = document.createElement("ul");
+
+      let listItem1 = document.createElement("li");
+      listItem1.innerText = "Buy groceries";      
+      
+      let listItem2 = document.createElement("li");
+      listItem2.innerText = "Feed the cat";      
+      
+      let listItem3 = document.createElement("li");
+      listItem3.innerText = "Do laundry";
+
+      unorderedList.append(listItem1, listItem2, listItem3);
+
+      document.body.append(unorderedList);
+
+      // 4 End
+
+      // 5 Start
+
+      let listItem4 = document.createElement("li");
+      listItem4.innerText = "Some ToDo";
+
+      unorderedList.append(listItem4);
+      
+      // 5 End
+
+      // 6 Start
+
+      lastLiElement = document.querySelector("ul").lastElementChild;
+      lastLiElement.remove();
+      
+      // 6 End
     </script>
   </body>
 </html>

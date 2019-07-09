@@ -15,3 +15,21 @@
 4. Find the Google search button and store it in a variable.
 5. Modify the text of the button so that it says "Yahooo!" instead.
 6. Change the text on the button from 'I'm Feeling Lucky' => 'I'm Lucky'
+
+```js
+let googleLogo = document.querySelector("#hplogo"); // 1
+
+googleLogo.src = "https://casscommunity3.files.wordpress.com/2017/06/yahoo-logo.png"; // 2
+
+googleLogo.srcset = "https://casscommunity3.files.wordpress.com/2017/06/yahoo-logo.png 1x, https://casscommunity3.files.wordpress.com/2017/06/yahoo-logo.png 2x"; // 2
+
+let googleSearchButton = document.querySelector(".FPdoLc.VlcLAe>center>.gNO89b"); // 4
+
+googleSearchButton.value = "Yahoo!"; // 5
+
+let luckyButton = document.querySelector(".FPdoLc.VlcLAe>center>input[name='btnI']");
+luckyButton.value = "I'm Lucky!";
+
+
+```
+

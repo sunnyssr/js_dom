@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Mouse Move Cursore</h1>
+  <h2 class="screenXcoordinates"></h2>
+  <h2 class="screenYcoordinates"></h2>
+  <h2 class="clientXcoordinates"></h2>
+  <h2 class="clientYcoordinates"></h2>
+  <script>
+    let updateCoordinates = (event) => {
+      document.querySelector(".screenXcoordinates").innerText = event.screenX;
+      document.querySelector(".screenYcoordinates").innerText = event.screenY;
+      document.querySelector(".clientXcoordinates").innerText = event.clientX;
+      document.querySelector(".clientYcoordinates").innerText = event.clientY;
+    }
+    window.addEventListener("mousemove", updateCoordinates)
+  </script>
+</body>
+</html>
